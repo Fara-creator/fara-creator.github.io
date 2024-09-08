@@ -8,13 +8,11 @@
 </head>
 <body>
     <h1>Hello, World!</h1>
-    <div id = "FaraView">PPresult</div>
+    <div id = "FaraView">tPresult</div>
     <Button id = "FaraButton" onclick = " FaraFunc(); ">Click Me</Button>
     <script> 
         function FaraFunc(){
-            $.post("connect.php", function(data){
-            $("#FaraView").html(data);
-            });
+            alert('Yes');
         }
     </script>
 </body>
