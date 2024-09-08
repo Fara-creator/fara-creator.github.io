@@ -12,7 +12,9 @@
     <Button id = "FaraButton" onclick = " FaraFunc(); ">Click Me</Button>
     <script> 
         function FaraFunc(){
-            alert('Yes');
+            $.post("connect.php", function(data, status){
+                alert(data + "\n" +status);
+            }
         }
     </script>
 </body>
