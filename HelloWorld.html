@@ -10,10 +10,12 @@
     <h1>Hello, World!</h1>
     <div id = "FaraView">MMresult</div>
     <Button id = "FaraButton" onclick = " FaraFunc(); ">Click Me</Button>
-    <script>
-        $.post("connect.php", function(data){
-            $("#FaraView").html("Fara");
-        });
+    <script> 
+        function FaraFunc(){
+            $.post("connect.php", function(data){
+            $("#FaraView").html(data);
+            });
+        }
     </script>
 </body>
 </html>
